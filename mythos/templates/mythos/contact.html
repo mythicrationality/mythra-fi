@@ -1,0 +1,31 @@
+{% extends "mythos/base.html" %}
+{% load staticfiles %}
+
+{% block extra-css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mythos/css/cover.css' %}" />
+{% endblock %}
+
+{% block content %}
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Mythra</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="{% url 'index' %}">Etusivu</a>
+            <a class="nav-link active" href="{% url 'contact' %}">Yhteystiedot</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Yhteystiedot</h1>
+        <a href="mailto:info@mythra.fi">info@mythra.fi</a>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Mythra - winning through reason and magic.</p>
+        </div>
+      </footer>
+    </div>
+{% endblock %}

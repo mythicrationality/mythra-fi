@@ -1,4 +1,7 @@
-mythra/local_settings.py
+mythra/local_settings.py*
+static/css/
+static/js/
+static/mythos/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
