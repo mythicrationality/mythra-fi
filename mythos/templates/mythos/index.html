@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block extra-css %}
-    <link rel="stylesheet" type="text/css" href="{% static 'mythos/css/cover.css' %}?v=2018-06-10" />
+    <link rel="stylesheet" type="text/css" href="{% static 'mythos/css/cover.css' %}?v=2018-06-10.1" />
 {% endblock %}
 
 {% block content %}
@@ -13,6 +13,7 @@
                 <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link active" href="{% url 'index' %}">Etusivu</a>
                     <a class="nav-link" href="{% url 'introduction-index' %}">Johdannot</a>
+                    <a class="nav-link" href="{% url 'material-index' %}">Materiaalit</a>
                     <a class="nav-link" href="{% url 'contact' %}">Yhteystiedot</a>
                 </nav>
             </div>
@@ -21,35 +22,46 @@
         <main role="main" class="inner cover">
             <h1 class="cover-heading">Myyttinen rationaalisuus</h1>
             <p class="lead">Järjen ja hengen riemuvoitto</p>
-            <div class="row text-blog">
+            <div class="row">
                 <div class="col">
-                    <a href="{% url 'introduction-kaj' %}">
+                    <div class="text-blog">
                         <h4>Mythra Kajn mukaan</h4>
                         <p class="text-quote">
                             "Rationaalinen ja myyttinen asennoituminen saattavat vaikuttaa keskenään ristiriitaisilta. Todellisuudessa ne eivät kuitenkaan ole sitä."
                         </p>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="{% url 'introduction-lumi' %}">
-                        <h4>Mythra Lumin mukaan</h4>
-                        <p class="text-quote">
-                            "Vaikka ihmiselämät ovatkin ohi kosmisessa silmänräpäyksessä, voi niiden aikana saavuttaa vaikka mitä."
-                        </p>
-                    </a>
+                    </div>
+                    <a href="{% url 'introduction-kaj' %}" class="btn btn-md btn-secondary">Lue lisää</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="{% url 'introduction-kaj' %}" class="btn btn-md btn-secondary">Lue lisää</a>
-                </div>
-                <div class="col">
+                    <div class="text-blog">
+                        <h4>Mythra Lumin mukaan</h4>
+                        <p class="text-quote">
+                            "Vaikka ihmiselämät ovatkin ohi kosmisessa silmänräpäyksessä, voi niiden aikana saavuttaa vaikka mitä."
+                        </p>
+                    </div>
                     <a href="{% url 'introduction-lumi' %}" class="btn btn-md btn-secondary">Lue lisää</a>
                 </div>
             </div>
-            <p class="lead contact">
-                <a href="{% url 'contact' %}" class="btn btn-lg btn-secondary">Ota yhteyttä</a>
-            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="text-blog">
+                        <h4>Mythra Tiinan mukaan</h4>
+                        <p class="text-quote">
+                            "Useimmiten emme edes huomaa suodatuksiamme, vaan samaistamme aivojemme luomat mielikuvat todellisuudesta ja välittömän kokemuksen todellisuudesta."
+                        </p>
+                    </div>
+                    <a href="{% url 'introduction-tiina' %}" class="btn btn-md btn-secondary">Lue lisää</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="lead contact">
+                        <a href="{% url 'contact' %}" class="btn btn-lg btn-secondary">Ota yhteyttä</a>
+                    </p>
+                </div>
+            </div>
         </main>
 
         <footer class="mastfoot mt-auto">

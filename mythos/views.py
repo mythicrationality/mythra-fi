@@ -11,7 +11,7 @@ def contact(request):
 
 
 def introduction_index(request):
-    return render(request, 'mythos/introduction/index.html', {})
+    return render(request, 'mythos/introduction/index.html')
 
 
 def introduction_kaj(request):
@@ -20,6 +20,14 @@ def introduction_kaj(request):
 
 def introduction_lumi(request):
     return render(request, 'mythos/introduction/lumi.html')
+
+
+def introduction_tiina(request):
+    return render(request, 'mythos/introduction/tiina.html')
+
+
+def material_index(request):
+    return render(request, 'mythos/material.html')
 
 
 def midsummer_redirect(request):
