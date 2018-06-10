@@ -1,0 +1,15 @@
+{% extends "mythos/introduction/base.html" %}
+{% load staticfiles %}
+
+{% block blog-title %}Johdannot{% endblock %}
+
+{% block main-text %}
+    <ul>
+        <li>
+            <a href="{% url 'introduction-lumi' %}">Admin Lumi</a>
+        </li>
+        <li>
+            <a href="{% url 'introduction-kaj' %}">Kaj Sotala</a>
+        </li>
+    </ul>
+{% endblock %}

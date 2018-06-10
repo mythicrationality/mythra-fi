@@ -3,23 +3,23 @@ from django.template import loader
 from django.shortcuts import render, redirect
 
 def index(request):
-    template = loader.get_template('mythos/index.html')
-    return HttpResponse(template.render({}))
+    return render(request, 'mythos/index.html')
 
 
 def contact(request):
-    template = loader.get_template('mythos/contact.html')
-    return HttpResponse(template.render({}))
+    return render(request, 'mythos/contact.html')
+
+
+def introduction_index(request):
+    return render(request, 'mythos/introduction/index.html', {})
 
 
 def introduction_kaj(request):
-    template = loader.get_template('mythos/introduction/kaj.html')
-    return HttpResponse(template.render({}))
+    return render(request, 'mythos/introduction/kaj.html')
 
 
 def introduction_lumi(request):
-    template = loader.get_template('mythos/introduction/lumi.html')
-    return HttpResponse(template.render({}))
+    return render(request, 'mythos/introduction/lumi.html')
 
 
 def midsummer_redirect(request):
