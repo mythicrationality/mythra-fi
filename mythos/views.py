@@ -27,7 +27,7 @@ def introduction_tiina(request):
 
 
 def material_index(request):
-    return render(request, 'mythos/material.html')
+    return render(request, 'mythos/material_wip.html')
 
 
 def midsummer_redirect(request):
