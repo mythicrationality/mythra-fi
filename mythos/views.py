@@ -14,8 +14,8 @@ def introduction_index(request):
     return render(request, 'mythos/introduction/index.html')
 
 
-def introduction_kaj(request):
-    return render(request, 'mythos/introduction/kaj.html')
+def introduction_king_may(request):
+    return render(request, 'mythos/introduction/king_may.html')
 
 
 def introduction_lumi(request):
