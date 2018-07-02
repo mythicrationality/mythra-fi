@@ -32,3 +32,7 @@ def material_index(request):
 
 def midsummer_redirect(request):
     return redirect("https://docs.google.com/document/d/1h_QssM0ZvnE7kqN1XFfN8VlR1Pms0PW8r9xbyWiKYJI/")
+
+
+def july_redirect(request):
+    return redirect("https://docs.google.com/document/d/11cxwwejVTbkXr2_dA1OjCq8g0y2dP7OH9E1VVr5PakM/")

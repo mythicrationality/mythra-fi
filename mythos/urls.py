@@ -14,4 +14,6 @@ urlpatterns = [
     path('materiaalit/', views.material_index, name='material-index'),
     path('överit/', views.midsummer_redirect, name='midsummer-redirect'),
     path('overit/', views.midsummer_redirect, name='midsummer-redirect'),
+    path('turkuheinäkuu2018/', views.july_redirect, name='midsummer-redirect'),
+    path('turkuheinakuu2018/', views.july_redirect, name='midsummer-redirect'),
 ]
